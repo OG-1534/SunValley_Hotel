@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Book Now - SunValley Hotel</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="SunValley Hotel Logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line" aria-label="Menu"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section__container booking__container">
+      <h2 class="section__header">Book Your Stay</h2>
+      <form action="/book" method="POST" class="booking__form">
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-in">CHECK-IN</label>
+            <input type="date" id="check-in" name="check-in" required />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-out">CHECK-OUT</label>
+            <input type="date" id="check-out" name="check-out" required />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-user-fill"></i></span>
+          <div>
+            <label for="guest">GUESTS</label>
+            <input type="number" id="guest" name="guest" placeholder="Number of Guests" min="1" required />
+          </div>
+        </div>
+        <div class="input__group input__btn">
+          <button class="btn" type="submit" aria-label="Book Now">Book Now</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#home"><img src="images/logo.png" alt="SunValley Hotel Logo" /></a>
+          </div>
+          <p class="section__description">
+            Experience the unmatched beauty and luxury during your stay with us today. Let the serene coastal ambiance, exceptional accommodations, and personalized service create unforgettable memories.
+          </p>
+          <button class="btn" aria-label="Book Now" onclick="window.location.href='book_now.html'">Book Now</button>
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Browse Destinations</a></li>
+            <li><a href="#">Special Offers & Packages</a></li>
+            <li><a href="#">Room Types & Amenities</a></li>
+            <li><a href="#">Customer Reviews & Ratings</a></li>
+            <li><a href="#">Travel Tips & Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR SERVICES</h4>
+          <ul class="footer__links">
+            <li><a href="#">Concierge Assistance</a></li>
+            <li><a href="#">Flexible Booking Options</a></li>
+            <li><a href="#">Airport Transfers</a></li>
+            <li><a href="#">Wellness & Recreation</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT US</h4>
+          <ul class="footer__links">
+            <li><a href="#">sunvalley@info.com</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30" />
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="30" height="30" />
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter" width="30" height="30" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © SunValley. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
