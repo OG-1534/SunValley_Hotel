@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>SunValley Hotel</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="SunValley Hotel Logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line" aria-label="Menu"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href='book_now.html'>Book Now</a></li>
+          <li><a href='sign_in.html'>Sign In</a></li>
+          <li><a href='sign_up.html'>Sign Up</a></li>
+        </ul>
+        <button class="btn nav__btn" aria-label="Sign In" onclick="window.location.href='sign_in.html'">Sign In</button>
+        <button class="btn nav__btn" aria-label="Sign Up" onclick="window.location.href='sign_up.html'">Sign Up</button>
+        <button class="btn nav__btn" aria-label="Book Now" onclick="window.location.href='book_now.html'">Book Now</button>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <h1><span>A Home<br />Away From Home</span></h1>
+        <p>Elegance - Tranquility - Friendly</p>
+      </div>
+    </header>
+
+    <section class="section__container booking__container">
+      <form action="/" class="booking__form">
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-in">CHECK-IN</label>
+            <input type="date" id="check-in" placeholder="Check In" />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-out">CHECK-OUT</label>
+            <input type="date" id="check-out" placeholder="Check Out" />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-user-fill"></i></span>
+          <div>
+            <label for="guest">GUEST</label>
+            <input type="number" id="guest" placeholder="Number of Guests" min="1" />
+          </div>
+        </div>
+        <div class="input__group input__btn">
+          <button class="btn" aria-label="Book Now" onclick="window.location.href='book_now.html'">Check Availability</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/about.jpg" alt="About SunValley Hotel" />
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">ABOUT US</p>
+        <h2 class="section__header">Memories Are Made Here!</h2>
+        <p class="section__description">
+          This is your ultimate coastal escape where sophistication and serenity converge. Located on a picturesque shoreline, our hotel provides a perfect blend of luxurious accommodations, stunning ocean vistas, and top-notch hospitality. Whether you’re seeking a romantic retreat, a family holiday, or a corporate getaway, Sun Valley Hotel guarantees an extraordinary experience with attentive service and coastal charm. Our dedication to excellence ensures every guest enjoys a flawless and memorable stay, enveloped by the natural beauty of our pristine coastal surroundings. Experience the perfect fusion of relaxation and elegance at Sun Valley Hotel – your seaside sanctuary.
+        </p>
+        <div class="about__btn">
+          <button class="btn" aria-label="Read More About Us">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container room__container">
+      <p class="section__subheader">OUR LIVING ROOM</p>
+      <h2 class="section__header">Luxury and Tranquility Start Here.</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="images/room-1.jpg" alt="Ocean Breeze Suite" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill" aria-label="Favorite"></i></span>
+              <span><i class="ri-paint-fill" aria-label="Decor"></i></span>
+              <span><i class="ri-shield-star-line" aria-label="Security"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Ocean Breeze Suite</h4>
+            <p>Where Luxury Meets the Waves.</p>
+            <h5>Starting from <span>KES.44,000/night</span></h5>
+            <button class="btn" aria-label="Book Ocean Breeze Suite" onclick="window.location.href='book_now.html'">Book Now</button>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="images/room-2.jpg" alt="Seaside Family Haven" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill" aria-label="Favorite"></i></span>
+              <span><i class="ri-paint-fill" aria-label="Decor"></i></span>
+              <span><i class="ri-shield-star-line" aria-label="Security"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Seaside Family Haven</h4>
+            <p>Creating Cherished Coastal Memories Together.</p>
+            <h5>Starting from <span>KES. 29,000/night</span></h5>
+            <button class="btn" aria-label="Book Seaside Family Haven" onclick="window.location.href='book_now.html'">Book Now</button>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="images/room-3.jpg" alt="Coastal Retreat Deluxe" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill" aria-label="Favorite"></i></span>
+              <span><i class="ri-paint-fill" aria-label="Decor"></i></span>
+              <span><i class="ri-shield-star-line" aria-label="Security"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Coastal Retreat Deluxe</h4>
+            <p>Your Private Sanctuary by the Sea.</p>
+            <h5>Starting from <span>KES.37,000/night</span></h5>
+            <button class="btn" aria-label="Book Coastal Retreat Deluxe" onclick="window.location.href='book_now.html'">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <div class="service__content">
+          <p class="section__subheader">SERVICES</p>
+          <h2 class="section__header">Strive Only For The Best.</h2>
+          <ul class="service__list">
+            <li>
+              <span><i class="ri-shield-star-line" aria-label="High Class Security and Privacy"></i></span>
+              High Class Security and Privacy
+            </li>
+            <li>
+              <span><i class="ri-24-hours-line" aria-label="24/7 Room Service"></i></span>
+              24/7 Room Service
+            </li>
+            <li>
+              <span><i class="ri-headphone-line" aria-label="Conference Facilities"></i></span>
+              Conference Facilities
+            </li>
+            <li>
+              <span><i class="ri-map-2-line" aria-label="Tourist Guide Support"></i></span>
+              Tourist Guide Support
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__content">
+        <div class="banner__card">
+          <h4>30+</h4>
+          <p>Properties Available</p>
+        </div>
+        <div class="banner__card">
+          <h4>1000+</h4>
+          <p>Bookings Completed</p>
+        </div>
+        <div class="banner__card">
+          <h4>1300+</h4>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="explore">
+      <p class="section__subheader">EXPLORE</p>
+      <h2 class="section__header">What's New Today.</h2>
+      <div class="explore__bg">
+        <div class="explore__content">
+          <p class="section__description">1st JUNE 2024</p>
+          <h4>A New Amazing Menu Is Available In Our Hotel.</h4>
+          <button class="btn" aria-label="Explore New Menu">Continue</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#home"><img src="images/logo.png" alt="SunValley Hotel Logo" /></a>
+          </div>
+          <p class="section__description">
+            Experience the unmatched beauty and luxury during your stay with us today. Let the serene coastal ambiance, exceptional accommodations, and personalized service create unforgettable memories.
+          </p>
+          <button class="btn" aria-label="Book Now" onclick="window.location.href='book_now.html'">Book Now</button>
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Browse Destinations</a></li>
+            <li><a href="#">Special Offers & Packages</a></li>
+            <li><a href="#">Room Types & Amenities</a></li>
+            <li><a href="#">Customer Reviews & Ratings</a></li>
+            <li><a href="#">Travel Tips & Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR SERVICES</h4>
+          <ul class="footer__links">
+            <li><a href="#">Concierge Assistance</a></li>
+            <li><a href="#">Flexible Booking Options</a></li>
+            <li><a href="#">Airport Transfers</a></li>
+            <li><a href="#">Wellness & Recreation</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT US</h4>
+          <ul class="footer__links">
+            <li><a href="#">sunvalley@info.com</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30" />
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="30" height="30" />
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter" width="30" height="30" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © SunValley. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
