@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta data for character encoding and viewport settings -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Link to Remix Icon library for icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+    <!-- Link to external stylesheet -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Page title -->
     <title>Book Now - SunValley Hotel</title>
   </head>
   <body>
     <header class="header">
       <nav>
         <div class="nav__bar">
+          <!-- Logo section with a link to home -->
           <div class="logo">
             <a href="index.html"><img src="images/logo.png" alt="SunValley Hotel Logo" /></a>
           </div>
+          <!-- Menu button for mobile view -->
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line" aria-label="Menu"></i>
           </div>
         </div>
+        <!-- Navigation links -->
         <ul class="nav__links" id="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -28,9 +38,11 @@
       </nav>
     </header>
 
+    <!-- Booking form section -->
     <section class="section__container booking__container">
       <h2 class="section__header">Book Your Stay</h2>
       <form action="/book" method="POST" class="booking__form">
+        <!-- Check-in date input -->
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
@@ -38,6 +50,7 @@
             <input type="date" id="check-in" name="check-in" required />
           </div>
         </div>
+        <!-- Check-out date input -->
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
@@ -45,6 +58,7 @@
             <input type="date" id="check-out" name="check-out" required />
           </div>
         </div>
+        <!-- Number of guests input -->
         <div class="input__group">
           <span><i class="ri-user-fill"></i></span>
           <div>
@@ -52,12 +66,14 @@
             <input type="number" id="guest" name="guest" placeholder="Number of Guests" min="1" required />
           </div>
         </div>
+        <!-- Submit button to book -->
         <div class="input__group input__btn">
           <button class="btn" type="submit" aria-label="Book Now">Book Now</button>
         </div>
       </form>
     </section>
 
+    <!-- Footer section -->
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
@@ -93,6 +109,7 @@
           <ul class="footer__links">
             <li><a href="#">sunvalley@info.com</a></li>
           </ul>
+          <!-- Social media links -->
           <div class="footer__socials">
             <a href="https://www.facebook.com" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30" />
@@ -114,7 +131,9 @@
       </div>
     </footer>
 
+    <!-- Link to ScrollReveal library for animations -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>

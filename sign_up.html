@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta data for character encoding and viewport settings -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Link to Remix Icon library for icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+  
+  <!-- Link to external stylesheet -->
   <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Page title -->
   <title>Sign Up - SunValley Hotel</title>
 </head>
 <body>
   <header class="header">
     <nav>
       <div class="nav__bar">
+        <!-- Logo section with a link to home -->
         <div class="logo">
           <a href="#"><img src="images/logo.png" alt="SunValley Hotel Logo" /></a>
         </div>
+        <!-- Menu button for mobile view -->
         <div class="nav__menu__btn" id="menu-btn">
           <i class="ri-menu-line" aria-label="Menu"></i>
         </div>
       </div>
+      <!-- Navigation links -->
       <ul class="nav__links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -27,30 +37,37 @@
         <li><a href='book_now.html'>Book Now</a></li>
         <li><a href='sign_in.html'>Sign In</a></li>
       </ul>
+      <!-- Navigation buttons for specific actions -->
       <button class="btn nav__btn" aria-label="Sign In" onclick="window.location.href='sign_in.html'">Sign In</button>
       <button class="btn nav__btn" aria-label="Book Now" onclick="window.location.href='book_now.html'">Book Now</button>
     </nav>
   </header>
 
+  <!-- Sign up form section -->
   <section class="section__container">
     <h2>Sign Up</h2>
     <form action="/sign_up" method="POST" class="auth__form">
+      <!-- Name input field -->
       <div class="input__group">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
       </div>
+      <!-- Email input field -->
       <div class="input__group">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required />
       </div>
+      <!-- Password input field -->
       <div class="input__group">
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required />
       </div>
+      <!-- Confirm Password input field -->
       <div class="input__group">
-        <label for="password">Confirm Password</label>
-        <input type="password" id="password" name="password" required />
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
       </div>
+      <!-- Sign up button -->
       <button class="btn" type="submit">Sign Up</button>
     </form>
   </section>

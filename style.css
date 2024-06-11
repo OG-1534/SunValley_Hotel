@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Define root variables for colors, font sizes, and maximum width */
 :root {
   --primary-color: #e82574;
   --primary-color-dark: #bc1c5c;
@@ -9,18 +10,21 @@
   --max-width: 1200px;
 }
 
+/* Reset padding, margin, and box-sizing for all elements */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Container for sections with max-width and padding */
 .section__container {
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
 }
 
+/* Subheader style with bottom margin, position, and underline effect */
 .section__subheader {
   margin-bottom: 0.5rem;
   position: relative;
@@ -39,6 +43,7 @@
   background-color: var(--primary-color);
 }
 
+/* Header style with margin, font size, weight, line height, and color */
 .section__header {
   max-width: 600px;
   margin-bottom: 1rem;
@@ -48,12 +53,14 @@
   color: var(--text-dark);
 }
 
+/* Description style with margin and text color */
 .section__description {
   max-width: 600px;
   margin-bottom: 1rem;
   color: var(--text-light);
 }
 
+/* Button style with padding, border, font size, weight, color, background, border-radius, and cursor */
 .btn {
   padding: 0.75rem 1.5rem;
   outline: none;
@@ -67,32 +74,39 @@
   transition: 0.3s;
 }
 
+/* Button hover effect */
 .btn:hover {
   background-color: var(--primary-color-dark);
 }
 
+/* Image style to ensure full width and flex display */
 img {
   width: 100%;
   display: flex;
 }
 
+/* Link style to remove underline */
 a {
   text-decoration: none;
 }
 
+/* Logo style with max width */
 .logo {
   max-width: 120px;
 }
 
+/* Smooth scroll behavior for HTML and body */
 html,
 body {
   scroll-behavior: smooth;
 }
 
+/* Body style with font family */
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Header style with background image and positioning */
 .header {
   background-image: url("images/header.jpg");
   background-position: center center;
@@ -100,6 +114,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Navigation style with fixed position and maximum width */
 nav {
   position: fixed;
   isolation: isolate;
@@ -110,6 +125,7 @@ nav {
   z-index: 9;
 }
 
+/* Navigation bar style with padding, flex display, alignment, and background color */
 .nav__bar {
   padding: 1rem;
   display: flex;
@@ -119,12 +135,14 @@ nav {
   background-color: var(--primary-color);
 }
 
+/* Menu button style with font size, color, and cursor */
 .nav__menu__btn {
   font-size: 1.5rem;
   color: var(--white);
   cursor: pointer;
 }
 
+/* Navigation links style with positioning, width, padding, flex display, alignment, background color, transform, transition, and z-index */
 .nav__links {
   list-style: none;
   position: absolute;
@@ -140,10 +158,12 @@ nav {
   z-index: -1;
 }
 
+/* Navigation links open state */
 .nav__links.open {
   transform: translateY(0);
 }
 
+/* Navigation links anchor style with position, isolation, padding, color, and transition */
 .nav__links a {
   position: relative;
   isolation: isolate;
@@ -152,14 +172,17 @@ nav {
   transition: 0.3s;
 }
 
+/* Navigation button style with display set to none */
 .nav__btn {
   display: none;
 }
 
+/* Header container style with padding */
 .header__container {
   padding-block: 10rem 15rem;
 }
 
+/* Header container paragraph style with margin, font size, color, text alignment, and opacity */
 .header__container p {
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -168,6 +191,7 @@ nav {
   opacity: 0.6;
 }
 
+/* Header container heading style with font size, weight, line height, color, and text alignment */
 .header__container h1 {
   font-size: 4rem;
   font-weight: 500;
@@ -176,14 +200,17 @@ nav {
   text-align: center;
 }
 
+/* Header container heading span style with color */
 .header__container h1 span {
   color: var(--primary-color);
 }
 
+/* Booking container style with padding */
 .booking__container {
   padding-block: 0;
 }
 
+/* Booking form style with padding, flex display, alignment, background color, border radius, transform, and box shadow */
 .booking__form {
   padding: 2rem;
   display: flex;
@@ -197,6 +224,7 @@ nav {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Input group style with flex display, alignment, and gap */
 .input__group {
   flex: 1 1 220px;
   display: flex;
@@ -205,16 +233,19 @@ nav {
   gap: 1rem;
 }
 
+/* Input group span style with font size and color */
 .input__group span {
   font-size: 1.75rem;
   color: var(--primary-color);
 }
 
+/* Input group label style with font weight and color */
 .input__group label {
   font-weight: 500;
   color: var(--text-dark);
 }
 
+/* Input group input style with display, width, padding, color, font size, outline, and border */
 .input__group input {
   display: block;
   width: 100%;
@@ -226,39 +257,46 @@ nav {
   border: none;
 }
 
+/* Input group input placeholder style with color */
 .input__group input::placeholder {
   color: var(--text-light);
 }
 
+/* About container style with overflow, display, and gap */
 .about__container {
   overflow: hidden;
   display: grid;
   gap: 2rem;
 }
 
+/* About image style with max width, margin, and border radius */
 .about__image img {
   max-width: 450px;
   margin: auto;
   border-radius: 5px;
 }
 
+/* Room grid style with margin and display */
 .room__grid {
   margin-top: 4rem;
   display: grid;
   gap: 1rem;
 }
 
+/* Room card style with overflow, border radius, and box shadow */
 .room__card {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Room card image style with position and isolation */
 .room__card__image {
   position: relative;
   isolation: isolate;
 }
 
+/* Room card icons style with position, alignment, display, gap, and z-index */
 .room__card__icons {
   position: absolute;
   right: 1rem;
@@ -272,6 +310,7 @@ nav {
   z-index: 1;
 }
 
+/* Room card icon span style with display, padding, font size, background color, border radius, box shadow, and cursor */
 .room__card__icons span {
   display: inline-block;
   padding: 2px 8px;
@@ -282,6 +321,7 @@ nav {
   cursor: pointer;
 }
 
+/* Room card icon span nth-child styles with specific colors */
 .room__card__icons span:nth-child(1) {
   color: #f472b6;
 }
@@ -294,10 +334,12 @@ nav {
   color: #60a5fa;
 }
 
+/* Room card details style with padding */
 .room__card__details {
   padding: 1rem;
 }
 
+/* Room card heading style with margin, font size, weight, and color */
 .room__card h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
@@ -305,11 +347,13 @@ nav {
   color: var(--text-dark);
 }
 
+/* Room card paragraph style with margin and color */
 .room__card p {
   margin-bottom: 0.5rem;
   color: var(--text-light);
 }
 
+/* Room card subheading style with margin, font size, weight, and color */
 .room__card h5 {
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -317,11 +361,13 @@ nav {
   color: var(--text-light);
 }
 
+/* Room card subheading span style with font size and color */
 .room__card h5 span {
   font-size: 1.1rem;
   color: var(--text-dark);
 }
 
+/* Service section style with background image, position, and size */
 .service {
   background-image: url("images/service.jpg");
   background-position: center center;
@@ -329,19 +375,21 @@ nav {
   background-repeat: no-repeat;
 }
 
+/* Service container style with padding, display, and grid template */
 .service__container {
   padding-block: 0;
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Service content style with grid column, padding, and background color */
 .service__content {
   grid-column: 1/3;
   padding: 2rem 4rem;
   background-color: var(--white);
 }
 
+/* Service list style with list style, margin, display, and gap */
 .service__list {
   list-style: none;
   margin-top: 2rem;
@@ -349,6 +397,7 @@ nav {
   gap: 2rem;
 }
 
+/* Service list item style with display, alignment, gap, font size, weight, and color */
 .service__list li {
   display: flex;
   align-items: center;
@@ -358,6 +407,7 @@ nav {
   color: var(--text-dark);
 }
 
+/* Service list item span style with padding, font size, color, background color, and border radius */
 .service__list span {
   padding: 5px 12px;
   font-size: 1.75rem;
@@ -366,6 +416,7 @@ nav {
   border-radius: 100%;
 }
 
+/* Service list item nth-child styles with specific colors */
 .service__list li:nth-child(1) span {
   color: #60a5fa;
   background-color: #dbeafe;
@@ -386,6 +437,7 @@ nav {
   background-color: #ffe4e6;
 }
 
+/* Banner content style with padding, display, gap, alignment, justify, flex wrap, border radius, and box shadow */
 .banner__content {
   padding: 2rem;
   display: flex;
@@ -397,40 +449,43 @@ nav {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Banner card style with text alignment and flex */
 .banner__card {
   text-align: center;
   flex: 1 1 180px;
 }
 
+/* Banner card heading style with font size, weight, and color */
 .banner__card h4 {
   font-size: 2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
+/* Banner card paragraph style with color */
 .banner__card p {
   color: var(--text-light);
 }
 
+/* Explore section styles for subheader and header with text alignment and margin */
 .explore :is(.section__subheader, .section__header) {
   text-align: center;
   margin-inline: auto;
 }
 
+/* Explore background style with margin, padding, display, grid template, background image, position, and size */
 .explore__bg {
   margin-top: 4rem;
   padding-block: 3rem;
   display: grid;
-  grid-template-columns:
-    minmax(1rem, 1fr)
-    minmax(0, var(--max-width))
-    minmax(1rem, 1fr);
+  grid-template-columns: minmax(1rem, 1fr) minmax(0, var(--max-width)) minmax(1rem, 1fr);
   background-image: url("images/explore.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+/* Explore content style with grid column, max width, padding, background color, border radius, and box shadow */
 .explore__content {
   grid-column: 2/3;
   max-width: 400px;
@@ -440,10 +495,12 @@ nav {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Explore content paragraph style with margin */
 .explore__content p {
   margin-bottom: 0.5rem;
 }
 
+/* Explore content heading style with margin, font size, weight, line height, and color */
 .explore__content h4 {
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -452,154 +509,170 @@ nav {
   color: var(--text-dark);
 }
 
+/* Button styles within the explore section */
 .explore__content .btn {
-  color: var(--primary-color);
-  background-color: var(--white);
-  border: 1px solid var(--primary-color);
+  color: var(--primary-color); /* Text color for the button */
+  background-color: var(--white); /* Background color for the button */
+  border: 1px solid var(--primary-color); /* Border color and size for the button */
 }
 
+/* Hover state for the button within the explore section */
 .explore__content .btn:hover {
-  color: var(--white);
-  background-color: var(--primary-color);
+  color: var(--white); /* Text color on hover */
+  background-color: var(--primary-color); /* Background color on hover */
 }
 
+/* Footer section styles */
 .footer {
-  background-color: var(--text-dark);
+  background-color: var(--text-dark); /* Background color for the footer */
 }
 
+/* Footer container styles with grid layout */
 .footer__container {
-  display: grid;
-  gap: 4rem 2rem;
+  display: grid; /* Use grid layout */
+  gap: 4rem 2rem; /* Space between grid items */
 }
 
+/* Footer column description with margin */
 .footer__col .section__description {
-  margin-block: 2rem;
+  margin-block: 2rem; /* Margin for top and bottom */
 }
 
+/* Footer column heading styles */
 .footer__col h4 {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--white);
+  margin-bottom: 2rem; /* Bottom margin */
+  font-size: 1.2rem; /* Font size */
+  font-weight: 500; /* Font weight */
+  color: var(--white); /* Text color */
 }
 
+/* Footer links container with grid layout */
 .footer__links {
-  list-style: none;
-  display: grid;
-  gap: 1rem;
+  list-style: none; /* Remove default list styling */
+  display: grid; /* Use grid layout */
+  gap: 1rem; /* Space between grid items */
 }
 
+/* Footer links styles */
 .footer__links a {
-  color: var(--text-light);
-  transition: 0.3s;
+  color: var(--text-light); /* Text color */
+  transition: 0.3s; /* Transition for hover effect */
 }
 
+/* Footer links hover state */
 .footer__links a:hover {
-  color: var(--white);
+  color: var(--white); /* Text color on hover */
 }
 
+/* Footer socials container with flex layout */
 .footer__socials {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  margin-top: 2rem; /* Top margin */
+  display: flex; /* Use flex layout */
+  align-items: center; /* Align items center */
+  gap: 1rem; /* Space between items */
+  flex-wrap: wrap; /* Allow items to wrap */
 }
 
+/* Footer social icons styles */
 .footer__socials img {
-  max-width: 25px;
-  opacity: 0.8;
-  transition: 0.3s;
+  max-width: 25px; /* Maximum width for icons */
+  opacity: 0.8; /* Initial opacity */
+  transition: 0.3s; /* Transition for hover effect */
 }
 
+/* Footer social icons hover state */
 .footer__socials img:hover {
-  opacity: 1;
+  opacity: 1; /* Full opacity on hover */
 }
 
+/* Footer bar styles */
 .footer__bar {
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: var(--text-light);
-  text-align: center;
+  padding: 1rem; /* Padding */
+  font-size: 0.9rem; /* Font size */
+  color: var(--text-light); /* Text color */
+  text-align: center; /* Center text alignment */
 }
 
+/* Media query for screen widths greater than 576px */
 @media (width > 576px) {
   .room__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for room grid */
   }
 
   .footer__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for footer container */
   }
 }
 
+/* Media query for screen widths greater than 768px */
 @media (width > 768px) {
   nav {
-    padding: 2rem 1rem;
-    position: static;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 2rem 1rem; /* Padding for navigation */
+    position: static; /* Static positioning */
+    display: flex; /* Use flex layout */
+    align-items: center; /* Align items center */
+    justify-content: space-between; /* Space between items */
   }
 
   .nav__bar {
-    padding: 0;
-    background-color: transparent;
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Transparent background */
   }
 
   .nav__menu__btn {
-    display: none;
+    display: none; /* Hide menu button */
   }
 
   .nav__links {
-    padding: 0;
-    width: unset;
-    position: static;
-    transform: none;
-    flex-direction: row;
-    background-color: transparent;
+    padding: 0; /* Remove padding */
+    width: unset; /* Unset width */
+    position: static; /* Static positioning */
+    transform: none; /* Remove transform */
+    flex-direction: row; /* Row layout */
+    background-color: transparent; /* Transparent background */
   }
 
   .nav__btn {
-    display: block;
+    display: block; /* Display navigation buttons */
   }
 
   .nav__links a::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: var(--primary-color);
-    transition: 0.3s;
-    transform-origin: left;
+    position: absolute; /* Absolute positioning */
+    content: ""; /* Empty content */
+    left: 0; /* Align left */
+    bottom: 0; /* Align bottom */
+    height: 2px; /* Height of the underline */
+    width: 0; /* Initial width */
+    background-color: var(--primary-color); /* Background color */
+    transition: 0.3s; /* Transition for hover effect */
+    transform-origin: left; /* Transform origin */
   }
 
   .nav__links a:hover::after {
-    width: 100%;
+    width: 100%; /* Full width on hover */
   }
 
   .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    align-items: center; /* Align items center */
   }
 
   .room__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Three-column layout for room grid */
   }
 
   .service__content {
-    grid-column: 2/3;
+    grid-column: 2/3; /* Grid column for service content */
   }
 
   .footer__container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Four-column layout for footer container */
   }
 }
 
+/* Media query for screen widths greater than 1024px */
 @media (width > 1024px) {
   .room__grid {
-    gap: 2rem;
+    gap: 2rem; /* Increased gap for room grid */
   }
 }

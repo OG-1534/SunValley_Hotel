@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta data for character encoding and viewport settings -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Link to Remix Icon library for icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+    <!-- Link to external stylesheet -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Page title -->
     <title>SunValley Hotel</title>
   </head>
   <body>
     <header class="header">
       <nav>
         <div class="nav__bar">
+          <!-- Logo section with a link to home -->
           <div class="logo">
             <a href="#"><img src="images/logo.png" alt="SunValley Hotel Logo" /></a>
           </div>
+          <!-- Menu button for mobile view -->
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line" aria-label="Menu"></i>
           </div>
         </div>
+        <!-- Navigation links -->
         <ul class="nav__links" id="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -28,18 +38,22 @@
           <li><a href='sign_in.html'>Sign In</a></li>
           <li><a href='sign_up.html'>Sign Up</a></li>
         </ul>
+        <!-- Navigation buttons for specific actions -->
         <button class="btn nav__btn" aria-label="Sign In" onclick="window.location.href='sign_in.html'">Sign In</button>
         <button class="btn nav__btn" aria-label="Sign Up" onclick="window.location.href='sign_up.html'">Sign Up</button>
         <button class="btn nav__btn" aria-label="Book Now" onclick="window.location.href='book_now.html'">Book Now</button>
       </nav>
+      <!-- Header section with a welcome message -->
       <div class="section__container header__container" id="home">
         <h1><span>A Home<br />Away From Home</span></h1>
         <p>Elegance - Tranquility - Friendly</p>
       </div>
     </header>
 
+    <!-- Booking form section -->
     <section class="section__container booking__container">
       <form action="/" class="booking__form">
+        <!-- Check-in date input -->
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
@@ -47,6 +61,7 @@
             <input type="date" id="check-in" placeholder="Check In" />
           </div>
         </div>
+        <!-- Check-out date input -->
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
@@ -54,6 +69,7 @@
             <input type="date" id="check-out" placeholder="Check Out" />
           </div>
         </div>
+        <!-- Number of guests input -->
         <div class="input__group">
           <span><i class="ri-user-fill"></i></span>
           <div>
@@ -61,15 +77,17 @@
             <input type="number" id="guest" placeholder="Number of Guests" min="1" />
           </div>
         </div>
+        <!-- Check availability button -->
         <div class="input__group input__btn">
           <button class="btn" aria-label="Book Now" onclick="window.location.href='book_now.html'">Check Availability</button>
         </div>
       </form>
     </section>
 
+    <!-- About section -->
     <section class="section__container about__container" id="about">
       <div class="about__image">
-        <img src="assets/about.jpg" alt="About SunValley Hotel" />
+        <img src="images/about.jpg" alt="About SunValley Hotel" />
       </div>
       <div class="about__content">
         <p class="section__subheader">ABOUT US</p>
@@ -83,10 +101,12 @@
       </div>
     </section>
 
+    <!-- Rooms section -->
     <section class="section__container room__container">
       <p class="section__subheader">OUR LIVING ROOM</p>
       <h2 class="section__header">Luxury and Tranquility Start Here.</h2>
       <div class="room__grid">
+        <!-- Room card 1 -->
         <div class="room__card">
           <div class="room__card__image">
             <img src="images/room-1.jpg" alt="Ocean Breeze Suite" />
@@ -103,6 +123,7 @@
             <button class="btn" aria-label="Book Ocean Breeze Suite" onclick="window.location.href='book_now.html'">Book Now</button>
           </div>
         </div>
+        <!-- Room card 2 -->
         <div class="room__card">
           <div class="room__card__image">
             <img src="images/room-2.jpg" alt="Seaside Family Haven" />
@@ -119,6 +140,7 @@
             <button class="btn" aria-label="Book Seaside Family Haven" onclick="window.location.href='book_now.html'">Book Now</button>
           </div>
         </div>
+        <!-- Room card 3 -->
         <div class="room__card">
           <div class="room__card__image">
             <img src="images/room-3.jpg" alt="Coastal Retreat Deluxe" />
@@ -138,6 +160,7 @@
       </div>
     </section>
 
+    <!-- Services section -->
     <section class="service" id="service">
       <div class="section__container service__container">
         <div class="service__content">
@@ -165,6 +188,7 @@
       </div>
     </section>
 
+    <!-- Banner section with quick statistics -->
     <section class="section__container banner__container">
       <div class="banner__content">
         <div class="banner__card">
@@ -182,6 +206,7 @@
       </div>
     </section>
 
+    <!-- Explore section -->
     <section class="explore" id="explore">
       <p class="section__subheader">EXPLORE</p>
       <h2 class="section__header">What's New Today.</h2>
@@ -194,6 +219,7 @@
       </div>
     </section>
 
+    <!-- Footer section -->
     <footer class="footer" id="contact">
       <div class="section__container footer__container">
         <div class="footer__col">
@@ -229,6 +255,7 @@
           <ul class="footer__links">
             <li><a href="#">sunvalley@info.com</a></li>
           </ul>
+          <!-- Social media links -->
           <div class="footer__socials">
             <a href="https://www.facebook.com" target="_blank">
               <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30" />
@@ -250,7 +277,9 @@
       </div>
     </footer>
 
+    <!-- Link to ScrollReveal library for animations -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
